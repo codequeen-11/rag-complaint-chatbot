@@ -20,7 +20,7 @@ pip-delete-this-directory.txt
 *.ipynb_checkpoints
 
 # Data files (large)
-data/
+# data/
 data/raw/
 data/processed/
 *.parquet
@@ -31,7 +31,7 @@ data/processed/
 vector_store/*.index
 vector_store/*.pkl
 vector_store/chroma/
-
+vector_store
 # Environment
 .env
 .env.local
