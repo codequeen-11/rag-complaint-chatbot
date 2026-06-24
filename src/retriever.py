@@ -29,17 +29,6 @@ def retrieve_documents(question, k=5):
 
 evaluation_results = []
 
-for question in EVALUATION_QUESTIONS:
 
-    result = rag.run(question)
 
-    source = result["sources"][0]
 
-    evaluation_results.append({
-        "Question": question,
-        "Generated Answer": result["answer"][:500],
-        "Source Product": source.metadata["product_category"],
-        "Complaint ID": source.metadata["complaint_id"]
-    })
-
-evaluation_results
